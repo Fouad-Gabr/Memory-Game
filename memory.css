@@ -1,0 +1,80 @@
+.main-parent {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+}
+aside {
+  grid-column: 1 / 4;
+  transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+  -moz-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  -o-transform: translateX(30%);
+}
+
+.title {
+  grid-column: 5 / 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  padding: 5px;
+  width: 450px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: palevioletred;
+}
+
+div {
+  float: left;
+  background: url(box.jpg);
+  margin: 5px;
+  padding: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+img {
+  opacity: 0;
+  border-radius: 10px;
+}
+
+body {
+  background-color: aqua;
+}
+h1 {
+  font-size: 28px;
+  font-style: italic;
+  color: red;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+#real_score {
+  text-align: center;
+  font-size: 41px;
+  margin: 0px;
+}
+#write_score {
+  font-weight: bold;
+  font-size: 30px;
+  color: red;
+  margin: 15px;
+}
